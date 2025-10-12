@@ -1,38 +1,116 @@
-.App {
+/* General App styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #821ccb, #9B59B6);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* Container for everything */
+.app-container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  width: 850px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Weather form input and button */
+form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  font-size: 16px;
+  width: 70%;
+}
+
+button {
+  background-color: #821ccb;
   color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #480b74;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Weather info box */
+.weather-box {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.weather-box h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.weather-box p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Loading text */
+.loading {
+  font-size: 18px;
+  animation: blink 1s infinite;
+}
+
+.forecast-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 5px;
+  width: 120px; /* fixed width for cards */
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.forecast-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.forecast-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.forecast-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
 }
