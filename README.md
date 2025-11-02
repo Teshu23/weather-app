@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# 🌤️ Modern React Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, responsive **Weather App** built using **React**, **Tailwind CSS**, and the **OpenWeatherMap API**.  
+It provides real-time weather details and a 5-day forecast for any city — designed with a beautiful, modern UI.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🌍 Search weather by city name  
+- 🌡️ Real-time temperature, humidity, and wind speed  
+- 📅 5-Day forecast view  
+- 🌈 Dynamic gradient backgrounds  
+- 📱 Fully responsive for all devices  
+- ⚡ Built with React functional components and hooks  
+- ☁️ Data powered by the OpenWeatherMap API  
+- 💫 Smooth loading animation  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧠 Tech Stack
 
-### `npm test`
+- **Frontend:** React  
+- **Styling:** Tailwind CSS  
+- **API:** [OpenWeatherMap](https://openweathermap.org/api)  
+- **Hosting:** [Vercel](https://weather-app-gamma-five-69.vercel.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🖼️ Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🏠 Home Screen
+![Weather App - Home](./Weather-App_1.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🌦️ Forecast Display
+![Weather App - Forecast](./Weather-App_2.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## ⚙️ Installation & Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Follow these simple steps to run the app locally 👇
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 1️⃣ Clone this repository
+```bash
+git clone https://github.com/yourusername/weather-app.git
+cd weather-app
+````
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2️⃣ Install dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+### 3️⃣ Add your API key
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Create a `.env.local` file in the project root and paste your OpenWeatherMap API key:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+WEATHER_API_KEY=your_api_key_here
+```
 
-### Code Splitting
+### 4️⃣ Run the app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run dev
+```
 
-### Analyzing the Bundle Size
+### 5️⃣ Build for production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm run build
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📁 Folder Structure
 
-### Advanced Configuration
+```
+weather-app/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── Loading.jsx
+│   │   ├── WeatherCurrent.jsx
+│   │   ├── WeatherForecast.jsx
+│   │   └── WeatherForm.jsx
+│   │
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── index.js
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── Weather-App_1.png
+├── Weather-App_2.png
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 🧾 API Reference
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The app uses the **[OpenWeatherMap API](https://openweathermap.org/api)** endpoints:
 
-### `npm run build` fails to minify
+* `/weather` → Current weather data
+* `/forecast` → 5-day forecast
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can register for a free API key at [https://openweathermap.org](https://openweathermap.org).
+
+---
+
+## 🛠️ Customization
+
+You can easily customize:
+
+* 🌈 Colors and gradient backgrounds in `App.css`
+* 🌡️ Temperature unit (°C or °F)
+* 🌆 Default city or theme
+
+---
+
+## 🌐 Live Demo
+
+🔗 [https://yourweatherapp.vercel.app](https://yourweatherapp.vercel.app)
+
+---
+
+## 👩‍💻 Author
+
+**Teshumala Kalihari**
+💻 Frontend Developer | React Enthusiast
+🐙 [GitHub](https://github.com/Teshu23)
+
+
+---
+
+⭐ *If you like this project, please give it a star on GitHub!*
+
+---
+
+
